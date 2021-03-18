@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="CityEngine">
+    <archive path="/Users/zohaib/Documents/IN1007/CityEngine40/CityEngine.jar" />
+  </library>
+  <library name="mp3">
+    <archive path="/Users/zohaib/Documents/IN1007/MpegAudioSPI1.9.5/mp3spi1.9.5.jar" />
+  </library>
+</eclipse-userlibraries>
+

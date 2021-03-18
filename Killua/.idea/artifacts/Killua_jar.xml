@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Killua:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Killua_jar</output-path>
+    <root id="archive" name="Killua.jar">
+      <element id="module-output" name="Killua" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../IN1007/MpegAudioSPI1.9.5/mp3spi1.9.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../IN1007/CityEngine40/CityEngine.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
