@@ -433,3 +433,40 @@ body{
     font-weight: 400;
     color: #2196F3;
 }
+
+.about .about-text form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.about .about-text form label{
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.about .about-text form button{
+    background-color: #2196F3;
+    font-size: 16px;
+    font-family:"Poppins", sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #ffffff;
+    border-radius: 40px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+}
+
+.about .about-text form button:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}

@@ -20,7 +20,7 @@
                 <li><a href="#about" id="aboutbtn" onclick="aboutClick()"><i class="fa fa-user"></i>About</a></li>
                 <li><a href="#experience" id="expbtn" onclick="expClick()"><i class="fa fa-pencil"></i>Experience</a></li>
                 <li><a href="#portfolio" id="portfoliobtn" onclick="portfolioClick()"><i class="fa fa-briefcase"></i>Project Portfolio</a></li>
-                <li><a href="#" id="contactbtn"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#contact" id="contactbtn" onclick="contactClick()"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <div class="copyright-text">
                 &copy; 2021 Zohaib Ahmed
@@ -196,6 +196,34 @@
                     </div>
                 </div>
             </section>
+            <section class="about section hidden" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Contact me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-text">
+                            <form action="https://formspree.io/f/xvoveezo" method="POST">
+                                <label>
+                                    Your name: <br>
+                                    <input name="name">
+                                </label>
+                                <label>
+                                    <br>Your email:<br>
+                                    <input type="email" name="_replyto">
+                                </label>
+                                <label>
+                                   <br> Your message:<br>
+                                    <textarea name="message" style="width:300px; height: 150px;"></textarea>
+                                </label>
+                                <button type="submit" id="btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 <script>
@@ -209,6 +237,7 @@
         var aboutpage = document.getElementById("about");
         var exppage = document.getElementById("experience");
         var portfoliopage = document.getElementById("portfolio");
+        var contactpage = document.getElementById("contact");
         aboutbutton.classList.remove("active");
         expbutton.classList.remove("active");
         portfoliobutton.classList.remove("active");
@@ -218,6 +247,7 @@
         aboutpage.classList.add("hidden");
         exppage.classList.add("hidden");
         portfoliopage.classList.add("hidden");
+        contactpage.classList.add("hidden");
     }
 
     function aboutClick(){
@@ -230,6 +260,7 @@
         var aboutpage = document.getElementById("about");
         var exppage = document.getElementById("experience");
         var portfoliopage = document.getElementById("portfolio");
+        var contactpage = document.getElementById("contact");
         homebutton.classList.remove("active");
         expbutton.classList.remove("active");
         portfoliobutton.classList.remove("active");
@@ -239,6 +270,7 @@
         homepage.classList.add("hidden");
         exppage.classList.add("hidden");
         portfoliopage.classList.add("hidden");
+        contactpage.classList.add("hidden");
     }
 
     function expClick(){
@@ -251,6 +283,7 @@
         var aboutpage = document.getElementById("about");
         var exppage = document.getElementById("experience");
         var portfoliopage = document.getElementById("portfolio");
+        var contactpage = document.getElementById("contact");
         homebutton.classList.remove("active");
         expbutton.classList.add("active");
         portfoliobutton.classList.remove("active");
@@ -260,6 +293,7 @@
         homepage.classList.add("hidden");
         exppage.classList.remove("hidden");
         portfoliopage.classList.add("hidden");
+        contactpage.classList.add("hidden");
     }
 
     function portfolioClick(){
@@ -272,6 +306,7 @@
         var aboutpage = document.getElementById("about");
         var exppage = document.getElementById("experience");
         var portfoliopage = document.getElementById("portfolio");
+        var contactpage = document.getElementById("contact");
         homebutton.classList.remove("active");
         expbutton.classList.remove("active");
         portfoliobutton.classList.add("active");
@@ -281,6 +316,30 @@
         homepage.classList.add("hidden");
         exppage.classList.add("hidden");
         portfoliopage.classList.remove("hidden");
+        contactpage.classList.add("hidden");
+    }
+
+    function contactClick(){
+        var aboutbutton = document.getElementById("aboutbtn");
+        var homebutton = document.getElementById("homebtn");
+        var expbutton = document.getElementById("expbtn");
+        var portfoliobutton = document.getElementById("portfoliobtn");
+        var contactbutton = document.getElementById("contactbtn");
+        var homepage = document.getElementById("home");
+        var aboutpage = document.getElementById("about");
+        var exppage = document.getElementById("experience");
+        var portfoliopage = document.getElementById("portfolio");
+        var contactpage = document.getElementById("contact");
+        homebutton.classList.remove("active");
+        expbutton.classList.remove("active");
+        portfoliobutton.classList.remove("active");
+        contactbutton.classList.add("active");
+        aboutbutton.classList.remove("active");
+        aboutpage.classList.add("hidden");
+        homepage.classList.add("hidden");
+        exppage.classList.add("hidden");
+        portfoliopage.classList.add("hidden");
+        contactpage.classList.remove("hidden");
     }
 </script>
 </body>
