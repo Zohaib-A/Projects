@@ -16,17 +16,19 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#"><i class="fa fa-pencil"></i>Experience</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i>Project Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#home" class="active" id="homebtn" onclick="homeClick()"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about" id="aboutbtn" onclick="aboutClick()"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#experience" id="expbtn" onclick="expClick()"><i class="fa fa-pencil"></i>Experience</a></li>
+                <li><a href="#portfolio" id="portfoliobtn" onclick="portfolioClick()"><i class="fa fa-briefcase"></i>Project Portfolio</a></li>
+                <li><a href="#" id="contactbtn"><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
             <div class="copyright-text">
+                &copy; 2021 Zohaib Ahmed
             </div>
         </div>
         <div class="main-content">
-            <section class = "home section">
+<!--HOME PAGE-->
+            <section class = "home section" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="images/about.jpeg" alt="profile" class="shadow-dark">
@@ -40,7 +42,246 @@
                     </div>
                 </div>
             </section>
+<!--ABOUT PAGE-->
+            <section class="about section hidden" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>About me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class = "about-text">
+                                    <h3>I'm Zohaib Ahmed and a <span>Computer Science Student</span></h3>
+                                    <p>I am a second year student at City, University of London, currently enrolled in a Computer Science
+                                        Bachelor's degree. I am on course to obtain strong academic results which have come as a result
+                                        of my previous experiences as well as my desire to learn more about the subject.
+                                        My most recent work experience was with Bright Network for a technology internship experience,
+                                        which ran for three days in July 2020. This allowed me to gain an insight into the development
+                                        and release of technology. This allowed me to build upon my bank of knowledge, which will only
+                                        benefit me in the future. Previously I was a volunteer librarian at my local community centre.
+                                        This allowed me to improve upon my communication skills and vastly improved my capability in
+                                        working with a team.
+                                        In the future, I plan on continuing within computer science, specifically I would like to work
+                                        within the security sub-sector of the industry.</p>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="personal-info">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday : <span>27 August 2001</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>19</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website : <span>www.domain.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>Zohaib.7@icloud.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree : <span>BSc Computer Science (Hons)</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>07956403675</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>London</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance : <span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#" class="btn">Download CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Java</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Web Design</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>C++</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 30%"></div>
+                                                <div class="skill-percent">30%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!--EXPERIENCE-->
+            <section class="about section hidden" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Work Experience</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class = "about-text">
+                                <h3>Chadwell Heath Community Centre <br><span>October 2015 - March 2018</span></h3>
+                                <p>During my 3 years volunteering at the community centre, I was tasked with many things which
+                                    ranged from promoting events in the library and the local community to completing tasks for the
+                                    users of the library. <br>These tasks included in assembling items which had been reserved and
+                                    loaned to users. Assembling and locating items allowed me to demonstrate my organisational
+                                    skills which enabled me to complete the task in an efficient manner so that the users of the
+                                    library would not have to wait too long. <br>
+                                    Furthermore, I was required to keep the shelves organised according to the system in place. I
+                                    demonstrated my communication skills multiple times during my years volunteering. Many users
+                                    would call up to enquire about items and I was adept at dealing with their query helpfully and
+                                    efficiently. I was also tasked with helping patrons complete forms as well as issue library
+                                    cards to them which developed my organisational skills and my ability to work methodically and
+                                    follow set processes.</p>
+                                <h3>Bright Network: Technology Internship Experience <br><span>June 2020 - July 2020</span></h3>
+                                <p>During this internship, I was required to research the current market of facial verification
+                                    technology used within mobile apps and subsequently create user stories relevant to the project.
+                                    Furthermore, I was required to define a project management plan regarding how I would take the
+                                    feature from being a concept to release. This experience gave me an invaluable insight in to
+                                    working in a technology environment and developed my research skills as well as my interpersonal
+                                    skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <section class="about section hidden" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Project Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class = "about-text">
+                                    <h3>Work in Progress <br><span>Java, Python, Web Development</span></h3>
+                                    <p>Soon to be added to gitHub as well as here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
+<script>
+    function homeClick(){
+        var aboutbutton = document.getElementById("aboutbtn");
+        var homebutton = document.getElementById("homebtn");
+        var expbutton = document.getElementById("expbtn");
+        var portfoliobutton = document.getElementById("portfoliobtn");
+        var contactbutton = document.getElementById("contactbtn");
+        var homepage = document.getElementById("home");
+        var aboutpage = document.getElementById("about");
+        var exppage = document.getElementById("experience");
+        var portfoliopage = document.getElementById("portfolio");
+        aboutbutton.classList.remove("active");
+        expbutton.classList.remove("active");
+        portfoliobutton.classList.remove("active");
+        contactbutton.classList.remove("active");
+        homebutton.classList.add("active");
+        homepage.classList.remove("hidden");
+        aboutpage.classList.add("hidden");
+        exppage.classList.add("hidden");
+        portfoliopage.classList.add("hidden");
+    }
+
+    function aboutClick(){
+        var aboutbutton = document.getElementById("aboutbtn");
+        var homebutton = document.getElementById("homebtn");
+        var expbutton = document.getElementById("expbtn");
+        var portfoliobutton = document.getElementById("portfoliobtn");
+        var contactbutton = document.getElementById("contactbtn");
+        var homepage = document.getElementById("home");
+        var aboutpage = document.getElementById("about");
+        var exppage = document.getElementById("experience");
+        var portfoliopage = document.getElementById("portfolio");
+        homebutton.classList.remove("active");
+        expbutton.classList.remove("active");
+        portfoliobutton.classList.remove("active");
+        contactbutton.classList.remove("active");
+        aboutbutton.classList.add("active");
+        aboutpage.classList.remove("hidden");
+        homepage.classList.add("hidden");
+        exppage.classList.add("hidden");
+        portfoliopage.classList.add("hidden");
+    }
+
+    function expClick(){
+        var aboutbutton = document.getElementById("aboutbtn");
+        var homebutton = document.getElementById("homebtn");
+        var expbutton = document.getElementById("expbtn");
+        var portfoliobutton = document.getElementById("portfoliobtn");
+        var contactbutton = document.getElementById("contactbtn");
+        var homepage = document.getElementById("home");
+        var aboutpage = document.getElementById("about");
+        var exppage = document.getElementById("experience");
+        var portfoliopage = document.getElementById("portfolio");
+        homebutton.classList.remove("active");
+        expbutton.classList.add("active");
+        portfoliobutton.classList.remove("active");
+        contactbutton.classList.remove("active");
+        aboutbutton.classList.remove("active");
+        aboutpage.classList.add("hidden");
+        homepage.classList.add("hidden");
+        exppage.classList.remove("hidden");
+        portfoliopage.classList.add("hidden");
+    }
+
+    function portfolioClick(){
+        var aboutbutton = document.getElementById("aboutbtn");
+        var homebutton = document.getElementById("homebtn");
+        var expbutton = document.getElementById("expbtn");
+        var portfoliobutton = document.getElementById("portfoliobtn");
+        var contactbutton = document.getElementById("contactbtn");
+        var homepage = document.getElementById("home");
+        var aboutpage = document.getElementById("about");
+        var exppage = document.getElementById("experience");
+        var portfoliopage = document.getElementById("portfolio");
+        homebutton.classList.remove("active");
+        expbutton.classList.remove("active");
+        portfoliobutton.classList.add("active");
+        contactbutton.classList.remove("active");
+        aboutbutton.classList.remove("active");
+        aboutpage.classList.add("hidden");
+        homepage.classList.add("hidden");
+        exppage.classList.add("hidden");
+        portfoliopage.classList.remove("hidden");
+    }
+</script>
 </body>
 </html>
